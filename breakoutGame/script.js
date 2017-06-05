@@ -59,7 +59,7 @@ function drawBricks(){
 				bricks[c][r].y = brickY;
 				ctx.beginPath();
 				ctx.rect(brickX, brickY, brickWidth, brickHeight);
-				ctx.fillStyle = "#0095DD";
+				ctx.fillStyle = "#FC4A1A";
 				ctx.fill();
 				ctx.closePath();
 			}
@@ -69,14 +69,14 @@ function drawBricks(){
 function drawBall(){
 	ctx.beginPath();
 	ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-	ctx.fillStyle = "#0095DD";
+	ctx.fillStyle = "#F78733";
 	ctx.fill();
 	ctx.closePath();
 }
 function drawPaddle(){
 	ctx.beginPath();
 	ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-	ctx.fillStyle = "#0095DD";
+	ctx.fillStyle = "#FC4A1A";
 	ctx.fill();
 	ctx.closePath();
 }
@@ -102,14 +102,14 @@ function collisionDect(){
 }
 
 function drawScore(){
-	ctx.font = "16px Arial";
-	ctx.fillStyle = "#0095DD";
+	ctx.font = "16px 'Bubbler One', sans-serif";
+	ctx.fillStyle = "#F78733";
 	ctx.fillText("Score: " + score, 8, 20);
 }
 
 function drawLives(){
-	ctx.font = "16px Arial";
-	ctx.fillStyle = "#0095DD";
+	ctx.font = "16px 'Bubbler One', sans-serif";
+	ctx.fillStyle = "#F78733";
 	ctx.fillText("Lives: " + lives, canvas.width-65, 20);
 }
 
